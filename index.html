@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)file:///C:/Users/Admin/.openclaw/workspace-main/bao-cao-nhan-hieu-mau.html -->
+<html lang="vi"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Báo cáo Đánh giá Khả năng Đăng ký Nhãn hiệu</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap');
+  
+  :root {
+    --primary: #0B3D6B;
+    --primary-light: #1565A8;
+    --accent: #C4A35A;
+    --accent-light: #F5EDD6;
+    --bg: #FAFBFD;
+    --text: #2D3748;
+    --text-light: #5A6577;
+    --border: #E2E8F0;
+    --success: #38A169;
+    --warning: #D69E2E;
+    --danger: #E53E3E;
+    --info: #3182CE;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Open Sans', 'Segoe UI', sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.7;
+    font-size: 14.5px;
+  }
+
+  .page {
+    max-width: 820px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 1px 20px rgba(0,0,0,0.08);
+  }
+
+  /* HEADER */
+  .header {
+    background: linear-gradient(135deg, var(--primary) 0%, #0A2E52 100%);
+    color: #fff;
+    padding: 36px 48px 28px;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 200px; height: 200px;
+    background: radial-gradient(circle, rgba(196,163,90,0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    transform: translate(40%, -40%);
+  }
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+  }
+  .company-name {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  .company-sub {
+    font-size: 11.5px;
+    opacity: 0.75;
+    margin-top: 4px;
+    line-height: 1.5;
+  }
+  .header-badge {
+    background: rgba(196,163,90,0.2);
+    border: 1px solid rgba(196,163,90,0.4);
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 11px;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .header-badge strong {
+    display: block;
+    color: var(--accent);
+    font-size: 12px;
+  }
+  .report-title {
+    font-family: 'Merriweather', serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+  .report-subtitle {
+    font-size: 13px;
+    opacity: 0.8;
+  }
+  .header-meta {
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+    font-size: 12px;
+    opacity: 0.8;
+  }
+  .header-meta span::before {
+    content: '•';
+    margin-right: 6px;
+    color: var(--accent);
+  }
+
+  /* CONTENT */
+  .content {
+    padding: 40px 48px;
+  }
+
+  /* SECTIONS */
+  .section {
+    margin-bottom: 36px;
+  }
+  .section-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--primary);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 12px;
+    flex-shrink: 0;
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary);
+  }
+  .section-title {
+    font-family: 'Merriweather', serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+
+  /* INFO TABLE */
+  .info-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .info-table td {
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    vertical-align: top;
+  }
+  .info-table td:first-child {
+    width: 200px;
+    background: #F7F9FC;
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 13.5px;
+  }
+  .info-table td:last-child {
+    font-size: 14px;
+  }
+
+  /* CONTENT BOX */
+  .content-box {
+    background: #F7F9FC;
+    border-left: 4px solid var(--primary);
+    padding: 18px 22px;
+    border-radius: 0 8px 8px 0;
+    margin: 14px 0;
+  }
+  .content-box.accent {
+    background: var(--accent-light);
+    border-left-color: var(--accent);
+  }
+  .content-box.success {
+    background: #F0FFF4;
+    border-left-color: var(--success);
+  }
+  .content-box.warning {
+    background: #FFFFF0;
+    border-left-color: var(--warning);
+  }
+
+  /* NICE TABLE */
+  .nice-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 13.5px;
+  }
+  .nice-table th {
+    background: var(--primary);
+    color: #fff;
+    padding: 10px 14px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 12.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+  .nice-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  .nice-table tr:nth-child(even) {
+    background: #F7F9FC;
+  }
+  .nice-table .group-badge {
+    display: inline-block;
+    background: var(--primary);
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .nice-table .expand-badge {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+
+  /* NICE META */
+  .nice-meta {
+    background: #F7F9FC;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .nice-meta-row {
+    display: flex;
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  .nice-meta-row:last-child { border-bottom: none; }
+  .nice-meta-label {
+    width: 220px;
+    flex-shrink: 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--primary);
+  }
+  .nice-meta-value {
+    flex: 1;
+    font-size: 14px;
+  }
+
+  /* CLASS CARDS */
+  .class-card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+  }
+  .class-card:hover {
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .class-card.priority-required { border-left: 4px solid var(--primary); }
+  .class-card.priority-recommended { border-left: 4px solid var(--info); }
+  .class-card.priority-optional { border-left: 4px solid #A0AEC0; }
+
+  .class-header {
+    display: flex;
+    align-items: center;
+    padding: 14px 18px;
+    background: #F7F9FC;
+    border-bottom: 1px solid var(--border);
+    gap: 14px;
+  }
+  .class-number-wrap {
+    flex-shrink: 0;
+  }
+  .class-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background: var(--primary);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .class-title {
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--primary);
+  }
+  .priority-badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    margin-left: 8px;
+    vertical-align: middle;
+    letter-spacing: 0.3px;
+  }
+  .priority-badge.required {
+    background: var(--primary);
+    color: #fff;
+  }
+  .priority-badge.recommended {
+    background: var(--info);
+    color: #fff;
+  }
+  .priority-badge.optional {
+    background: #E2E8F0;
+    color: #5A6577;
+  }
+
+  .class-body {
+    padding: 18px 20px;
+  }
+  .class-field {
+    margin-bottom: 16px;
+  }
+  .class-field:last-child { margin-bottom: 0; }
+  .class-field-label {
+    font-size: 11.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-light);
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+  .class-field-value {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .nice-official {
+    background: #FFFFF0;
+    border: 1px solid #FEFCBF;
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-style: italic;
+    font-size: 13px;
+    color: var(--text-light);
+  }
+  .product-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 6px;
+  }
+  .product-tag {
+    display: inline-block;
+    background: #EBF4FF;
+    color: var(--primary);
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 12.5px;
+    font-weight: 600;
+    border: 1px solid #BEE3F8;
+  }
+  .product-tag.service {
+    background: #F0FFF4;
+    color: #276749;
+    border-color: #C6F6D5;
+  }
+  .benefit-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  .benefit-list li {
+    padding: 6px 0 6px 24px;
+    position: relative;
+    margin-bottom: 2px;
+  }
+  .benefit-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: 700;
+  }
+
+  /* REAL EXAMPLE BOX */
+  .real-example {
+    background: linear-gradient(135deg, #FFFFF0 0%, #FFF8E7 100%);
+    border: 1px solid #F6E5A3;
+    border-radius: 8px;
+    padding: 16px 18px;
+    margin-top: 4px;
+    position: relative;
+  }
+  .real-example::before {
+    content: '💡';
+    position: absolute;
+    top: 14px;
+    left: 18px;
+    font-size: 16px;
+  }
+  .real-example-label {
+    font-size: 11.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #8B6914;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+    padding-left: 26px;
+  }
+  .real-example-text {
+    font-size: 13.5px;
+    line-height: 1.7;
+    color: var(--text);
+    padding-left: 26px;
+  }
+  .real-example-text strong {
+    color: var(--primary);
+  }
+
+  /* STRATEGY SUMMARY */
+  .strategy-summary {
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .strategy-header {
+    background: var(--primary);
+    color: #fff;
+    padding: 12px 20px;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .strategy-body {
+    padding: 20px;
+  }
+  .strategy-phase {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  .strategy-phase:last-of-type {
+    margin-bottom: 12px;
+  }
+  .phase-label {
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  .phase-tag {
+    display: inline-block;
+    background: var(--accent-light);
+    color: #8B6914;
+    padding: 1px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-left: 6px;
+  }
+  .phase-content {
+    font-size: 14px;
+    padding-left: 16px;
+    border-left: 2px solid var(--accent);
+  }
+  .strategy-note {
+    background: #F7F9FC;
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    margin-top: 10px;
+    border: 1px solid var(--border);
+  }
+  .strategy-note.warning {
+    background: #FFFFF0;
+    border-color: #FEFCBF;
+  }
+
+  /* SEARCH RESULT */
+  .search-result {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 14px 0;
+  }
+  .search-result-header {
+    background: #F7F9FC;
+    padding: 10px 16px;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--primary);
+    border-bottom: 1px solid var(--border);
+  }
+  .search-result-body {
+    padding: 14px 16px;
+  }
+  .comparison-row {
+    display: flex;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #F0F0F0;
+    align-items: flex-start;
+  }
+  .comparison-row:last-child { border-bottom: none; }
+  .comp-label {
+    width: 130px;
+    flex-shrink: 0;
+    font-size: 12px;
+    color: var(--text-light);
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .comp-yours {
+    flex: 1;
+    background: #F0FFF4;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+  }
+  .comp-existing {
+    flex: 1;
+    background: #FFF5F5;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+  }
+
+  /* ASSESSMENT */
+  .assessment-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 14px 0;
+  }
+  .assess-item {
+    background: #F7F9FC;
+    border-radius: 8px;
+    padding: 14px 18px;
+    border: 1px solid var(--border);
+  }
+  .assess-label {
+    font-size: 12px;
+    color: var(--text-light);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  .assess-value {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .assess-value.good { color: var(--success); }
+  .assess-value.moderate { color: var(--warning); }
+  .assess-value.risk { color: var(--danger); }
+  .assess-note {
+    font-size: 12.5px;
+    color: var(--text-light);
+    margin-top: 4px;
+    line-height: 1.5;
+  }
+
+  /* CONCLUSION BOX */
+  .conclusion-box {
+    background: linear-gradient(135deg, #F0FFF4 0%, #F7F9FC 100%);
+    border: 2px solid var(--success);
+    border-radius: 10px;
+    padding: 22px 26px;
+    margin: 18px 0;
+    text-align: center;
+  }
+  .conclusion-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--success);
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+  }
+  .conclusion-value {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--success);
+    margin-bottom: 6px;
+  }
+  .conclusion-note {
+    font-size: 13px;
+    color: var(--text-light);
+  }
+
+  /* RECOMMENDATION */
+  .rec-list {
+    list-style: none;
+    margin: 14px 0;
+  }
+  .rec-list li {
+    padding: 12px 16px 12px 48px;
+    position: relative;
+    margin-bottom: 8px;
+    background: #F7F9FC;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .rec-list li::before {
+    content: attr(data-icon);
+    position: absolute;
+    left: 14px;
+    top: 12px;
+    font-size: 18px;
+  }
+  .rec-list li strong {
+    color: var(--primary);
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  /* CREDENTIALS */
+  .cred-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 14px 0;
+  }
+  .cred-item {
+    text-align: center;
+    padding: 18px 12px;
+    background: #F7F9FC;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .cred-number {
+    font-family: 'Merriweather', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--primary);
+  }
+  .cred-label {
+    font-size: 12px;
+    color: var(--text-light);
+    margin-top: 4px;
+  }
+
+  /* PRICE TABLE */
+  .price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+  }
+  .price-table th {
+    background: var(--primary);
+    color: #fff;
+    padding: 10px 14px;
+    text-align: left;
+    font-size: 12.5px;
+    font-weight: 600;
+  }
+  .price-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+    font-size: 13.5px;
+  }
+  .price-table tr:nth-child(even) td {
+    background: #F7F9FC;
+  }
+  .price-table .total-row td {
+    background: var(--accent-light) !important;
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--primary);
+    border-top: 2px solid var(--accent);
+  }
+  .price-table .free { color: var(--success); font-weight: 600; }
+  .price-note {
+    font-size: 12.5px;
+    color: var(--text-light);
+    font-style: italic;
+    margin-top: 8px;
+    padding: 10px 14px;
+    background: #FFFFF0;
+    border-radius: 6px;
+    border: 1px solid #FEFCBF;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: var(--primary);
+    color: #fff;
+    padding: 24px 48px;
+    font-size: 12px;
+    line-height: 1.8;
+    opacity: 0.95;
+  }
+  .footer-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+  }
+  .footer strong {
+    color: var(--accent);
+  }
+  .footer a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  /* UTILITY */
+  p { margin-bottom: 10px; }
+  ul { padding-left: 20px; margin: 8px 0; }
+  li { margin-bottom: 4px; }
+  .text-muted { color: var(--text-light); font-size: 13px; }
+  .mt-1 { margin-top: 8px; }
+  .mt-2 { margin-top: 16px; }
+  .divider { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
+
+  /* PRINT */
+  @media print {
+    body { background: #fff; font-size: 12px; }
+    .page { box-shadow: none; max-width: 100%; }
+    .header { padding: 24px 32px 20px; }
+    .content { padding: 24px 32px; }
+    .section { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-top">
+      <div>
+        <div class="company-name">CÔNG TY LUẬT TNHH MINH KHUÊ</div>
+        <div class="company-sub">
+          Tổ chức Đại diện Sở hữu Trí tuệ — Mã số 226<br>
+          Đại diện Quyền tác giả &amp; Quyền liên quan
+        </div>
+      </div>
+      <div class="header-badge">
+        <strong>MÃ ĐẠI DIỆN</strong>
+        226
+      </div>
+    </div>
+    <div class="report-title">BÁO CÁO ĐÁNH GIÁ<br>KHẢ NĂNG ĐĂNG KÝ NHÃN HIỆU</div>
+    <div class="report-subtitle">Tài liệu tư vấn sơ bộ — Được chuẩn bị riêng cho Quý khách hàng</div>
+    <div class="header-meta">
+      <span>Ngày lập: 17/06/2026</span>
+      <span>Mã hồ sơ: MK-NH-2026-0617</span>
+      <span>Chuyên viên phụ trách: Ths. Ngô Thu Thảo</span>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <!-- PHẦN 1 -->
+    <div class="section">
+      <div class="section-header">
+        <span class="section-number">1</span>
+        <span class="section-title">Thông tin Nhãn hiệu Đề nghị Đăng ký</span>
+      </div>
+      <table class="info-table">
+        <tbody><tr>
+          <td>Nhãn hiệu</td>
+          <td><strong style="font-size:18px; color: var(--primary);">VIET PAINT</strong></td>
+        </tr>
+        <tr>
+          <td>Loại nhãn hiệu</td>
+          <td>Nhãn hiệu kết hợp (chữ + hình)</td>
+        </tr>
+        <tr>
+          <td>Chủ đơn dự kiến</td>
+          <td>Công ty TNHH Sơn Việt Paint<br><span class="text-muted">MST: 0109xxxxxx — TP. Hà Nội</span></td>
+        </tr>
+        <tr>
+          <td>Hoạt động kinh doanh</td>
+          <td>Sản xuất và phân phối sơn công nghiệp, vật liệu phủ bề mặt, chế phẩm bảo vệ kim loại</td>
+        </tr>
+        <tr>
+          <td>Định hướng phát triển</td>
+          <td>Mở rộng kênh phân phối qua TMĐT, xuất khẩu sang thị trường ASEAN</td>
+        </tr>
+        <tr>
+          <td>Mục tiêu bảo hộ</td>
+          <td>Bảo hộ độc quyền nhãn hiệu tại Việt Nam cho sản phẩm sơn và dịch vụ thương mại liên quan</td>
+        </tr>
+      </tbody></table>
+    </div>
+
+    <!-- PHẦN 2 -->
+    <div class="section">
+      <div class="section-header">
+        <span class="section-number">2</span>
+        <span class="section-title">Phân nhóm Hàng hóa / Dịch vụ</span>
+      </div>
+
+      <div class="nice-meta">
+        <div class="nice-meta-row">
+          <span class="nice-meta-label">Phân loại áp dụng</span>
+          <span class="nice-meta-value">Nice Classification Phiên bản 13-2026 <em>(áp dụng từ 01/01/2026)</em></span>
+        </div>
+        <div class="nice-meta-row">
+          <span class="nice-meta-label">Nhãn hiệu</span>
+          <span class="nice-meta-value"><strong>VIET PAINT</strong></span>
+        </div>
+        <div class="nice-meta-row">
+          <span class="nice-meta-label">Ngành nghề / Sản phẩm chính</span>
+          <span class="nice-meta-value">Sản xuất, kinh doanh sơn công nghiệp, vật liệu phủ bề mặt và chế phẩm bảo vệ kim loại</span>
+        </div>
+      </div>
+
+      <div class="content-box accent mt-2">
+        <strong>📌 Chiến lược phân nhóm:</strong> Các nhóm dưới đây được sắp xếp theo thứ tự ưu tiên từ lõi ra ngoài, dựa trên chiến lược: <em>bảo vệ sản phẩm cốt lõi trước → mở rộng kênh thương mại → phòng vệ mở rộng theo định hướng phát triển.</em>
+      </div>
+
+      <!-- CLASS 02 -->
+      <div class="class-card priority-required mt-2">
+        <div class="class-header">
+          <div class="class-number-wrap">
+            <span class="class-number">1</span>
+          </div>
+          <div class="class-info">
+            <div class="class-title">Class 02 — Sơn, Véc-ni, Chất phủ <span class="priority-badge required">Bắt buộc</span></div>
+          </div>
+        </div>
+        <div class="class-body">
+          <div class="class-field">
+            <div class="class-field-label">Tiêu đề chính xác (Nice 13-2026)</div>
+            <div class="class-field-value nice-official">Sơn; véc-ni; sơn mài; chất bảo quản chống gỉ và chống mục gỗ; chất tạo màu, thuốc nhuộm; mực in, đánh dấu và khắc; nhựa tự nhiên thô; kim loại dạng lá và bột dùng trong sơn, trang trí, in ấn và nghệ thuật.</div>
+          </div>
+          <div class="class-field">
+            <div class="class-field-label">Sản phẩm cụ thể đăng ký</div>
+            <div class="class-field-value">
+              <div class="product-tags">
+                <span class="product-tag">Sơn</span>
+                <span class="product-tag">Sơn lót cho khung gầm xe cộ</span>
+                <span class="product-tag">Sơn phủ</span>
+                <span class="product-tag">Men cho sơn</span>
+                <span class="product-tag">Chế phẩm bảo vệ kim loại</span>
+                <span class="product-tag">Chế phẩm chống gỉ</span>
+              </div>
+              <span class="text-muted">→ 06 sản phẩm</span>
+            </div>
+          </div>
+          <div class="class-field">
+            <div class="real-example">
+              <div class="real-example-label">Ví dụ thực tế dễ hiểu</div>
+              <div class="real-example-text">Sơn VIET PAINT lon 5L bán tại đại lý, khách mua về sơn nhà, sơn cửa sắt chống gỉ, sơn lót gầm xe — tất cả đều thuộc <strong>Class 02</strong>.</div>
+            </div>
+          </div>
+          <div class="class-field">
+            <div class="class-field-label">Tại sao phải đăng ký nhóm này?</div>
+            <div class="class-field-value">
+              <p>Đây là nhóm bao trùm toàn bộ sản phẩm Quý khách đang bán ra thị trường hàng ngày. Nếu không đăng ký, đối thủ có thể nộp đơn đăng ký "VIET PAINT" cho chính nhóm sản phẩm sơn — khi đó Quý khách sẽ <strong>mất quyền sử dụng tên thương hiệu của mình trên sản phẩm cốt lõi</strong>. Chi phí giành lại nhãn hiệu khi bị đăng ký trước lớn hơn rất nhiều so với đăng ký ban đầu.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CLASS 35 -->
+      <div class="class-card priority-recommended mt-2">
+        <div class="class-header">
+          <div class="class-number-wrap">
+            <span class="class-number">2</span>
+          </div>
+          <div class="class-info">
+            <div class="class-title">Class 35 — Quảng cáo, Quản lý Kinh doanh, Bán lẻ <span class="priority-badge recommended">Rất nên</span></div>
+          </div>
+        </div>
+        <div class="class-body">
+          <div class="class-field">
+            <div class="class-field-label">Tiêu đề chính xác (Nice 13-2026)</div>
+            <div class="class-field-value nice-official">Quảng cáo; quản lý, tổ chức và điều hành kinh doanh; các công việc văn phòng.</div>
+          </div>
+          <div class="class-field">
+            <div class="class-field-label">Dịch vụ cụ thể đăng ký</div>
+            <div class="class-field-value">
+              <div class="product-tags">
+                <span class="product-tag service">Dịch vụ mua bán sơn &amp; vật liệu phủ</span>
+                <span class="product-tag service">Dịch vụ xuất nhập khẩu</span>
+                <span class="product-tag service">Kinh doanh thương mại điện tử</span>
+              </div>
+              <span class="text-muted">→ 03 dịch vụ</span>
+            </div>
+          </div>
+          <div class="class-field">
+            <div class="real-example">
+              <div class="real-example-label">Ví dụ thực tế dễ hiểu</div>
+              <div class="real-example-text">Quý khách mở gian hàng "VIET PAINT" trên Shopee hoặc xuất khẩu sơn qua đơn vị phân phối — đó là <strong>hoạt động thương mại thuộc Class 35</strong>.</div>
+            </div>
+          </div>
+          <div class="class-field">
+            <div class="class-field-label">Tại sao phải đăng ký nhóm này?</div>
+            <div class="class-field-value">
+              <p>Theo nguyên tắc Nice, <strong>sản phẩm và dịch vụ là hai phạm vi bảo hộ tách biệt</strong>. Đăng ký sơn (Class 02) không bảo vệ được việc bán sơn (Class 35). Nếu chỉ có Class 02, bên thứ ba có thể đăng ký "VIET PAINT" cho Class 35 rồi mở shop bán sơn online — dùng chính tên thương hiệu của Quý khách. Với định hướng TMĐT và xuất nhập khẩu, đây là nhóm <strong>không nên bỏ qua</strong>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CLASS MỞ RỘNG -->
+      <div class="class-card priority-optional mt-2">
+        <div class="class-header">
+          <div class="class-number-wrap">
+            <span class="class-number">3</span>
+          </div>
+          <div class="class-info">
+            <div class="class-title">Class 01 — Hóa chất Công nghiệp <span class="priority-badge optional">Bổ sung</span></div>
+          </div>
+        </div>
+        <div class="class-body">
+          <div class="class-field">
+            <div class="class-field-label">Tiêu đề chính xác (Nice 13-2026)</div>
+            <div class="class-field-value nice-official">Hóa chất dùng trong công nghiệp, khoa học và nhiếp ảnh, cũng như trong nông nghiệp, làm vườn và lâm nghiệp; nhựa nhân tạo chưa qua xử lý, nhựa dẻo chưa qua xử lý; chất chữa cháy và phòng cháy; chế phẩm tôi và hàn; chất thuộc da động vật; chất kết dính dùng trong công nghiệp; bột trét và các chất trám khác; phân bón; chế phẩm sinh học dùng trong công nghiệp và khoa học.</div>
+          </div>
+          <div class="class-field">
+            <div class="class-field-label">Tại sao cân nhắc nhóm này?</div>
+            <div class="class-field-value">
+              <p>Nếu Quý khách <strong>tự sản xuất nguyên liệu thô</strong> — nhựa, hóa chất phục vụ pha chế sơn — thì Class 01 sẽ bảo vệ tên thương hiệu trên chính nguồn nguyên liệu đó. Tuy nhiên, nếu chỉ mua nguyên liệu từ nhà cung cấp khác, Class này chưa cần thiết ở giai đoạn hiện tại và có thể bổ sung sau khi mở rộng sản xuất.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="class-card priority-optional mt-2">
+        <div class="class-header">
+          <div class="class-number-wrap">
+            <span class="class-number">4</span>
+          </div>
+          <div class="class-info">
+            <div class="class-title">Class 37 — Dịch vụ Xây dựng, Thi công <span class="priority-badge optional">Bổ sung</span></div>
+          </div>
+        </div>
+        <div class="class-body">
+          <div class="class-field">
+            <div class="class-field-label">Tiêu đề chính xác (Nice 13-2026)</div>
+            <div class="class-field-value nice-official">Xây dựng công trình; sửa chữa; dịch vụ lắp đặt.</div>
+          </div>
+          <div class="class-field">
+            <div class="class-field-label">Tại sao cân nhắc nhóm này?</div>
+            <div class="class-field-value">
+              <p>Nếu Quý khách có kế hoạch <strong>mở dịch vụ thi công sơn, phủ bề mặt</strong> — ví dụ nhận sơn nhà trọn gói, thi công sơn epoxy cho nhà xưởng — thì Class 37 sẽ bảo vệ mảng dịch vụ này. Nhiều hãng sơn lớn tại Việt Nam như Nippon, Jotun đều đã đăng ký Class 37 khi mở rộng sang thi công.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- KHUYẾN NGHỊ TỔNG THỂ -->
+      <div class="strategy-summary mt-2">
+        <div class="strategy-header">Khuyến nghị Tổng thể &amp; Chiến lược Đăng ký</div>
+        <div class="strategy-body">
+          <div class="strategy-phase">
+            <div class="phase-label">Giai đoạn 1 <span class="phase-tag">Tối thiểu — Nên đăng ký ngay</span></div>
+            <div class="phase-content">
+              <strong>Class 02 + Class 35</strong> → Bao quát ~90% nhu cầu bảo hộ hiện tại: sản phẩm sơn + kênh phân phối &amp; TMĐT.
+            </div>
+          </div>
+          <div class="strategy-phase">
+            <div class="phase-label">Giai đoạn 2 <span class="phase-tag">Mở rộng khi sẵn sàng</span></div>
+            <div class="phase-content">
+              Bổ sung <strong>Class 01</strong> khi tự sản xuất nguyên liệu, <strong>Class 37</strong> khi triển khai dịch vụ thi công.
+            </div>
+          </div>
+          <div class="strategy-note">
+            <strong>Lý do thứ tự ưu tiên:</strong> Theo logic customer journey — khách hàng tiếp xúc với <em>sản phẩm</em> (Class 02) và <em>kênh mua hàng</em> (Class 35) trước; dịch vụ thi công (Class 37) và nguyên liệu (Class 01) là mở rộng về phía upstream/downstream.
+          </div>
+          <div class="strategy-note warning">
+            <strong>Lưu ý:</strong> Không khuyến nghị đăng ký thừa các Class chưa có sản phẩm/dịch vụ thực tế để tối ưu chi phí. Đăng ký không sử dụng trong 5 năm có thể bị yêu cầu chấm dứt hiệu lực theo Điều 95 Luật SHTT.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PHẦN 3 -->
+    <div class="section">
+      <div class="section-header">
+        <span class="section-number">3</span>
+        <span class="section-title">Kết quả Tra cứu Sơ bộ</span>
+      </div>
+
+      <p class="text-muted">Tra cứu trên CSDL Cục Sở hữu trí tuệ Việt Nam (NOIP) ngày 17/06/2026 · Biến thể: "VIET PAINT", "VIỆT PAINT", "VIETPAINT" · Nhóm 02, 35 · Tỷ lệ chính xác ~60% (tham khảo)</p>
+
+      <!-- Nhãn hiệu trùng -->
+      <div class="search-result">
+        <div class="search-result-header">🔴 Nhãn hiệu trùng lặp — Không phát hiện</div>
+        <div class="search-result-body">
+          <p class="text-muted">Không tìm thấy nhãn hiệu nào trùng hoàn toàn "VIET PAINT" trong Nhóm 02 và 35.</p>
+        </div>
+      </div>
+
+      <!-- Nhãn hiệu tương tự -->
+      <div class="search-result">
+        <div class="search-result-header">🟡 Nhãn hiệu tương tự — 02 kết quả cần lưu ý</div>
+        <div class="search-result-body">
+
+          <p style="font-weight:600; margin-bottom: 12px;">① "VIET COAT" — Số đơn: 4-2024-xxxxx</p>
+          <div class="comparison-row">
+            <div class="comp-label">Nhãn hiệu</div>
+            <div class="comp-yours"><strong>VIET PAINT</strong> (của Quý khách)</div>
+            <div class="comp-existing"><strong>VIET COAT</strong> (đã đăng ký)</div>
+          </div>
+          <div class="comparison-row">
+            <div class="comp-label">Nhóm</div>
+            <div class="comp-yours">Nhóm 02, 35</div>
+            <div class="comp-existing">Nhóm 02</div>
+          </div>
+          <div class="comparison-row">
+            <div class="comp-label">Yếu tố chung</div>
+            <div class="comp-yours" style="background: #FFFFF0; flex: 2;">Cùng tiền tố "VIET", cùng ngành sơn/phủ. Tuy nhiên "PAINT" ≠ "COAT" — khác biệt về phần phân biệt chính.</div>
+          </div>
+
+          <hr class="divider">
+
+          <p style="font-weight:600; margin-bottom: 12px;">② "VP PAINT" — Số đơn: 4-2023-xxxxx</p>
+          <div class="comparison-row">
+            <div class="comp-label">Nhãn hiệu</div>
+            <div class="comp-yours"><strong>VIET PAINT</strong> (của Quý khách)</div>
+            <div class="comp-existing"><strong>VP PAINT</strong> (đã đăng ký)</div>
+          </div>
+          <div class="comparison-row">
+            <div class="comp-label">Nhóm</div>
+            <div class="comp-yours">Nhóm 02, 35</div>
+            <div class="comp-existing">Nhóm 02, 35</div>
+          </div>
+          <div class="comparison-row">
+            <div class="comp-label">Yếu tố chung</div>
+            <div class="comp-yours" style="background: #FFFFF0; flex: 2;">Cùng hậu tố "PAINT", cùng nhóm. "VP" có thể bị xem là viết tắt của "Viet Paint" — cần đánh giá kỹ hơn qua tra cứu chuyên sâu.</div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="content-box warning mt-2">
+        <strong>⚠️ Lưu ý quan trọng:</strong> Kết quả tra cứu sơ bộ có tỷ lệ chính xác khoảng 60%. Để đánh giá chính xác hơn khả năng bảo hộ, đặc biệt với 02 nhãn hiệu tương tự nêu trên, chúng tôi khuyến nghị tiến hành <strong>tra cứu chuyên sâu</strong> qua Cục SHTT (tỷ lệ chính xác trên 90%).
+      </div>
+    </div>
+
+    <!-- PHẦN 5 -->
+    <div class="section">
+      <div class="section-header">
+        <span class="section-number">5</span>
+        <span class="section-title">Đánh giá Khả năng Bảo hộ</span>
+      </div>
+
+      <div class="assessment-grid">
+        <div class="assess-item">
+          <div class="assess-label">Tính phân biệt</div>
+          <div class="assess-value moderate">Trung bình</div>
+          <div class="assess-note">"VIET" mang tính mô tả xuất xứ, "PAINT" mô tả sản phẩm. Tính phân biệt phụ thuộc vào tổng thể kết hợp + logo.</div>
+        </div>
+        <div class="assess-item">
+          <div class="assess-label">Khả năng gây nhầm lẫn</div>
+          <div class="assess-value moderate">Cần đánh giá thêm</div>
+          <div class="assess-note">02 nhãn hiệu tương tự ("VIET COAT", "VP PAINT") cần tra cứu chuyên sâu để kết luận.</div>
+        </div>
+        <div class="assess-item">
+          <div class="assess-label">Yếu tố mô tả</div>
+          <div class="assess-value moderate">Có yếu tố mô tả</div>
+          <div class="assess-note">"PAINT" trực tiếp mô tả sản phẩm sơn — theo Điều 74.2 Luật SHTT, yếu tố mô tả không được bảo hộ riêng lẻ.</div>
+        </div>
+        <div class="assess-item">
+          <div class="assess-label">Yếu tố phổ biến</div>
+          <div class="assess-value good">Không đáng lo</div>
+          <div class="assess-note">Tổ hợp "VIET PAINT" chưa phổ biến trong thương mại. Không thuộc danh mục từ ngữ bị loại trừ.</div>
+        </div>
+      </div>
+
+      <div class="conclusion-box">
+        <div class="conclusion-label">Kết luận sơ bộ</div>
+        <div class="conclusion-value">TƯƠNG ĐỐI KHẢ QUAN</div>
+        <div class="conclusion-note">Nhãn hiệu có khả năng được chấp nhận bảo hộ, đặc biệt khi đăng ký dạng kết hợp (chữ + hình). Tuy nhiên, cần tra cứu chuyên sâu để loại trừ rủi ro từ 02 nhãn hiệu tương tự đã phát hiện.</div>
+      </div>
+    </div>
+
+    <!-- PHẦN 6 -->
+    <div class="section">
+      <div class="section-header">
+        <span class="section-number">6</span>
+        <span class="section-title">Khuyến nghị Chuyên môn</span>
+      </div>
+
+      <ul class="rec-list">
+        <li data-icon="✅">
+          <strong>Đăng ký dạng kết hợp (chữ + hình)</strong>
+          Với yếu tố "PAINT" mang tính mô tả, việc đăng ký kết hợp logo sẽ tăng đáng kể tính phân biệt và khả năng được chấp nhận bảo hộ so với chỉ đăng ký chữ.
+        </li>
+        <li data-icon="🔍">
+          <strong>Tiến hành tra cứu chuyên sâu trước khi nộp đơn</strong>
+          Với 02 nhãn hiệu tương tự đã phát hiện, tra cứu chuyên sâu (qua Cục SHTT, tỷ lệ chính xác &gt;90%) sẽ giúp đánh giá chính xác rủi ro bị từ chối và có phương án xử lý sớm.
+        </li>
+        <li data-icon="📋">
+          <strong>Đăng ký bản quyền logo</strong>
+          Song song với đăng ký nhãn hiệu, Quý khách nên cân nhắc đăng ký quyền tác giả cho logo tại Cục Bản quyền — tạo lớp bảo vệ kép cho thương hiệu.
+        </li>
+        <li data-icon="📌">
+          <strong>Lưu ý về thành phần "VIET"</strong>
+          Yếu tố "VIET" có thể bị coi là chỉ dẫn nguồn gốc địa lý và không được bảo hộ riêng lẻ. Tuy nhiên, khi kết hợp với "PAINT" và logo, tổng thể nhãn hiệu vẫn có tính phân biệt.
+        </li>
+      </ul>
+    </div>
+
+    <!-- PHẦN 7 -->
+    <div class="section">
+      <div class="section-header">
+        <span class="section-number">7</span>
+        <span class="section-title">Về Luật Minh Khuê</span>
+      </div>
+
+      <div class="cred-grid">
+        <div class="cred-item">
+          <div class="cred-number">226</div>
+          <div class="cred-label">Mã đại diện SHTT<br>Cục Sở hữu Trí tuệ</div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-number">16+</div>
+          <div class="cred-label">Năm kinh nghiệm<br>tư vấn SHTT</div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-number">18.000+</div>
+          <div class="cred-label">Đơn đăng ký đã nộp<br>thành công</div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-number">30+</div>
+          <div class="cred-label">Luật sư &amp; Chuyên viên<br>pháp lý cao cấp</div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-number">2</div>
+          <div class="cred-label">Văn phòng<br>Hà Nội &amp; TP.HCM</div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-number">100%</div>
+          <div class="cred-label">Cam kết bảo mật<br>thông tin khách hàng</div>
+        </div>
+      </div>
+
+      <p class="text-muted mt-1">Luật Minh Khuê là tổ chức Đại diện Sở hữu Trí tuệ và Đại diện Quyền tác giả được cấp phép hoạt động, có năng lực thực hiện đầy đủ các thủ tục đăng ký nhãn hiệu, sáng chế, kiểu dáng công nghiệp và quyền tác giả tại Việt Nam và quốc tế.</p>
+    </div>
+
+    <!-- PHẦN 8 -->
+    <div class="section">
+      <div class="section-header">
+        <span class="section-number">8</span>
+        <span class="section-title">Chi phí Dịch vụ</span>
+      </div>
+
+      <table class="price-table">
+        <thead>
+          <tr>
+            <th style="width:40px">STT</th>
+            <th>Nội dung</th>
+            <th style="width:140px; text-align:right">Chi phí (VNĐ)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Tra cứu sơ bộ khả năng đăng ký nhãn hiệu</td>
+            <td style="text-align:right" class="free">Miễn phí</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Tra cứu chuyên sâu tại Cục SHTT <em>(không bắt buộc)</em><br><span class="text-muted">Tỷ lệ chính xác trên 90%</span></td>
+            <td style="text-align:right">3.184.000</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Nộp đơn đăng ký nhãn hiệu chính thức<br><span class="text-muted">02 nhãn hiệu × 02 nhóm (Nhóm 02, 35)</span></td>
+            <td style="text-align:right">11.875.500</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Phí cấp văn bằng bảo hộ <em>(khi được cấp)</em></td>
+            <td style="text-align:right">966.000</td>
+          </tr>
+          <tr class="total-row">
+            <td></td>
+            <td>TỔNG CHI PHÍ DỰ KIẾN</td>
+            <td style="text-align:right">16.025.500</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="price-note">
+        <strong>Lưu ý:</strong> Chi phí đã bao gồm phí dịch vụ, lệ phí nhà nước và 5% VAT. Trường hợp không tra cứu chuyên sâu, tổng phí giảm còn <strong>12.841.500 VNĐ</strong>. Việc thanh toán được chia thành 03 đợt tương ứng với từng giai đoạn triển khai.
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-grid">
+      <div>
+        <strong>CÔNG TY LUẬT TNHH MINH KHUÊ</strong><br>
+        VP Hà Nội: Phòng 2007, Tòa C2, D'.Capitale, 119 Trần Duy Hưng, Cầu Giấy<br>
+        VP HCM: 72/2 Trường Chinh, P. Tân Sơn Nhất, TP. Hồ Chí Minh
+      </div>
+      <div style="text-align:right">
+        <strong>Liên hệ tư vấn</strong><br>
+        Hotline: <a href="tel:19006162">1900.6162</a><br>
+        Email: <a href="mailto:lienhe@luatminhkhue.vn">lienhe@luatminhkhue.vn</a><br>
+        Website: <a href="https://luatminhkhue.vn/">luatminhkhue.vn</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+</body></html>
